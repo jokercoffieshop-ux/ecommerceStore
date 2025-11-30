@@ -1,0 +1,21 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/contact": [
+      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
+      "static/chunks/f5964_next_dist_shared_lib_5a9b700b._.js",
+      "static/chunks/f5964_next_dist_client_253310ec._.js",
+      "static/chunks/f5964_next_dist_2e793457._.js",
+      "static/chunks/f5964_react-dom_25b217df._.js",
+      "static/chunks/f5964_068ccb94._.js",
+      "static/chunks/[root-of-the-server]__e5d27064._.js",
+      "static/chunks/Downloads_coffe-project_pages_contact_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_coffe-project_pages_contact_0efb15ca._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

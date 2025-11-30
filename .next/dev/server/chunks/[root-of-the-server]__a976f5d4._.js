@@ -294,7 +294,7 @@ module.exports = mod;
 var __TURBOPACK__imported__module__$5b$externals$5d2f$jsonwebtoken__$5b$external$5d$__$28$jsonwebtoken$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/jsonwebtoken [external] (jsonwebtoken, cjs)");
 ;
 const JWT_SECRET = process.env.JWT_SECRET || "fallback-secret-key";
-const JWT_EXPIRES_IN = "7d"; // Token expires in 7 days
+const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || "7d"; // Token expires in 7 days
 function generateToken(payload) {
     return __TURBOPACK__imported__module__$5b$externals$5d2f$jsonwebtoken__$5b$external$5d$__$28$jsonwebtoken$2c$__cjs$29$__["default"].sign(payload, JWT_SECRET, {
         expiresIn: JWT_EXPIRES_IN

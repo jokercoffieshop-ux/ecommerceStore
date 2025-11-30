@@ -1,5 +1,4 @@
 __turbopack_load_page_chunks__("/profile", [
-  "static/chunks/[root-of-the-server]__a024a9a3._.js",
   "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
   "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
   "static/chunks/f5964_next_dist_client_bdd29016._.js",
@@ -7,7 +6,8 @@ __turbopack_load_page_chunks__("/profile", [
   "static/chunks/f5964_next_8cae3839._.js",
   "static/chunks/f5964_react-dom_25b217df._.js",
   "static/chunks/f5964_3dcb3eb8._.js",
+  "static/chunks/[root-of-the-server]__a024a9a3._.js",
   "static/chunks/Downloads_coffe-project_styles_0de1d59b._.css",
   "static/chunks/Downloads_coffe-project_pages_profile_2da965e7._.js",
-  "static/chunks/turbopack-Downloads_coffe-project_pages_profile_f4137fac._.js"
+  "static/chunks/turbopack-Downloads_coffe-project_pages_profile_001e7d67._.js"
 ])

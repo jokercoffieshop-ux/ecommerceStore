@@ -2,9 +2,6 @@ self.__BUILD_MANIFEST = {
   "/": [
     "static/chunks/pages/index.js"
   ],
-  "/_error": [
-    "static/chunks/pages/_error.js"
-  ],
   "/about": [
     "static/chunks/pages/about.js"
   ],
@@ -23,17 +20,11 @@ self.__BUILD_MANIFEST = {
   "/cart": [
     "static/chunks/pages/cart.js"
   ],
-  "/checkout": [
-    "static/chunks/pages/checkout.js"
-  ],
   "/login": [
     "static/chunks/pages/login.js"
   ],
   "/orders": [
     "static/chunks/pages/orders.js"
-  ],
-  "/orders/[id]": [
-    "static/chunks/pages/orders/[id].js"
   ],
   "/products": [
     "static/chunks/pages/products.js"
@@ -43,12 +34,6 @@ self.__BUILD_MANIFEST = {
   ],
   "/register": [
     "static/chunks/pages/register.js"
-  ],
-  "/staff/orders": [
-    "static/chunks/pages/staff/orders.js"
-  ],
-  "/staff/products": [
-    "static/chunks/pages/staff/products.js"
   ],
   "/verify-otp": [
     "static/chunks/pages/verify-otp.js"

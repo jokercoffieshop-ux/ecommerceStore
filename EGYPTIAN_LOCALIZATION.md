@@ -80,9 +80,9 @@
 
 **بعد:**
 ```javascript
-<li>📧 info@benturki.com</li>
-<li>📱 +20 100 123 4567</li>
-<li>📍 القاهرة، جمهورية مصر العربية</li>
+<li>jokercoffieshop@gmail.com</li>
+<li>📱 +20 1028975556</li>
+<li>📍 الخانكه ، جمهورية مصر العربية</li>
 ```
 
 ---

@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.logoContainer}>
-            <h1 className={styles.storeName}>☕ بن تركي</h1>
+            <h1 className={styles.storeName}> بن تركي</h1>
             <div className={styles.logoLine}></div>
           </div>
           <p className={styles.tagline}>أصالة القهوة العربية في كل فنجان</p>

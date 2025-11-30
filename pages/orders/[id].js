@@ -123,14 +123,14 @@ export default function OrderDetails() {
                 <span className={styles.label}>طريقة الدفع:</span>
                 <span>
                   {order.paymentMethod === "CASH" && "💵 الدفع عند الاستلام"}
-                  {order.paymentMethod === "CARD" && "💳 بطاقة ائتمانية"}
-                  {order.paymentMethod === "ONLINE" && "🌐 الدفع الإلكتروني"}
+                  {/* {order.paymentMethod === "CARD" && "💳 بطاقة ائتمانية"} */}
+                  {/* {order.paymentMethod === "ONLINE" && "🌐 الدفع الإلكتروني"} */}
                 </span>
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.label}>تاريخ الطلب:</span>
                 <span>
-                  {new Date(order.createdAt).toLocaleDateString("ar-SA", {
+                  {new Date(order.createdAt).toLocaleDateString("en-GB", {
                     year: "numeric",
                     month: "long",
                     day: "numeric",

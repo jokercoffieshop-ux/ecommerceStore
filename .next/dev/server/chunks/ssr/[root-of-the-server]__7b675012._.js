@@ -415,20 +415,6 @@ function Layout({ children }) {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
                                                 lineNumber: 166,
                                                 columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/contact",
-                                                    children: "اتصل بنا"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 167,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 167,
-                                                columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -446,111 +432,45 @@ function Layout({ children }) {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Layout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].footerSection,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h4", {
-                                        children: "الدعم"
+                                        children: "تواصل معنا"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 172,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/faq",
-                                                    children: "الأسئلة الشائعة"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 174,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 174,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/privacy",
-                                                    children: "سياسة الخصوصية"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 175,
-                                                    columnNumber: 19
-                                                }, this)
+                                                children: "jokercoffieshop@gmail.com"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
                                                 lineNumber: 175,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/terms",
-                                                    children: "الشروط والأحكام"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 176,
-                                                    columnNumber: 19
-                                                }, this)
+                                                children: "📱 +20 1028975556"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
                                                 lineNumber: 176,
                                                 columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 173,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                lineNumber: 171,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Layout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].footerSection,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h4", {
-                                        children: "تواصل معنا"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 181,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                children: "📧 info@benturki.com"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 183,
-                                                columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                children: "📱 +20 100 123 4567"
+                                                children: "📍 الخانكه ، جمهورية مصر العربية"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 184,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                children: "📍 القاهرة، جمهورية مصر العربية"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 185,
+                                                lineNumber: 177,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 182,
+                                        lineNumber: 174,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                lineNumber: 180,
+                                lineNumber: 172,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -562,15 +482,15 @@ function Layout({ children }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Layout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].footerBottom,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                            children: "© 2024 بن تركي - جميع الحقوق محفوظة"
+                            children: "© 2025 بن تركي — جميع الحقوق محفوظة."
                         }, void 0, false, {
                             fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                            lineNumber: 191,
-                            columnNumber: 11
+                            lineNumber: 183,
+                            columnNumber: 10
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                        lineNumber: 190,
+                        lineNumber: 182,
                         columnNumber: 9
                     }, this)
                 ]
@@ -911,99 +831,37 @@ function Checkout() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Checkout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].paymentMethods,
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("label", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Checkout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].paymentOption,
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
-                                                        type: "radio",
-                                                        name: "paymentMethod",
-                                                        value: "CASH",
-                                                        checked: formData.paymentMethod === "CASH",
-                                                        onChange: (e)=>setFormData({
-                                                                ...formData,
-                                                                paymentMethod: e.target.value
-                                                            })
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                        lineNumber: 184,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                        children: "💵 الدفع عند الاستلام"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                        lineNumber: 193,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                lineNumber: 183,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("label", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Checkout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].paymentOption,
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
-                                                        type: "radio",
-                                                        name: "paymentMethod",
-                                                        value: "CARD",
-                                                        checked: formData.paymentMethod === "CARD",
-                                                        onChange: (e)=>setFormData({
-                                                                ...formData,
-                                                                paymentMethod: e.target.value
-                                                            })
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                        lineNumber: 197,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                        children: "💳 بطاقة ائتمانية"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                        lineNumber: 206,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                lineNumber: 196,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("label", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Checkout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].paymentOption,
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
-                                                        type: "radio",
-                                                        name: "paymentMethod",
-                                                        value: "ONLINE",
-                                                        checked: formData.paymentMethod === "ONLINE",
-                                                        onChange: (e)=>setFormData({
-                                                                ...formData,
-                                                                paymentMethod: e.target.value
-                                                            })
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                        lineNumber: 210,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                        children: "🌐 الدفع الإلكتروني"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                        lineNumber: 219,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
-                                                lineNumber: 209,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("label", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$styles$2f$Checkout$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].paymentOption,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
+                                                    type: "radio",
+                                                    name: "paymentMethod",
+                                                    value: "CASH",
+                                                    checked: formData.paymentMethod === "CASH",
+                                                    onChange: (e)=>setFormData({
+                                                            ...formData,
+                                                            paymentMethod: e.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
+                                                    lineNumber: 184,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                    children: "💵 الدفع عند الاستلام"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
+                                                    lineNumber: 193,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
+                                            lineNumber: 183,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/Downloads/coffe-project/pages/checkout.js",
                                         lineNumber: 182,
                                         columnNumber: 15

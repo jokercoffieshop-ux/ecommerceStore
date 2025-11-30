@@ -163,32 +163,25 @@ export default function Layout({ children }) {
             <h4>روابط سريعة</h4>
             <ul>
               <li><Link href="/products">المنتجات</Link></li>
-              <li><Link href="/about">من نحن</Link></li>
-              <li><Link href="/contact">اتصل بنا</Link></li>
+              <li><Link href="/about">من نحن</Link></li> 
             </ul>
           </div>
 
-          <div className={styles.footerSection}>
-            <h4>الدعم</h4>
-            <ul>
-              <li><Link href="/faq">الأسئلة الشائعة</Link></li>
-              <li><Link href="/privacy">سياسة الخصوصية</Link></li>
-              <li><Link href="/terms">الشروط والأحكام</Link></li>
-            </ul>
-          </div>
+           
 
           <div className={styles.footerSection}>
             <h4>تواصل معنا</h4>
             <ul>
-              <li>📧 info@benturki.com</li>
-              <li>📱 +20 100 123 4567</li>
-              <li>📍 القاهرة، جمهورية مصر العربية</li>
+              <li>jokercoffieshop@gmail.com</li>
+              <li>📱 +20 1028975556</li>
+              <li>📍 الخانكه ، جمهورية مصر العربية</li>
             </ul>
           </div>
         </div>
 
         <div className={styles.footerBottom}>
-          <p>© 2024 بن تركي - جميع الحقوق محفوظة</p>
+         <p>© 2025 بن تركي — جميع الحقوق محفوظة.</p>
+
         </div>
       </footer>
     </div>

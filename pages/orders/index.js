@@ -91,7 +91,7 @@ export default function Orders() {
                   <div>
                     <h3>طلب رقم: {order.orderNumber}</h3>
                     <p className={styles.orderDate}>
-                      {new Date(order.createdAt).toLocaleDateString("ar-SA", {
+                      {new Date(order.createdAt).toLocaleDateString("en-GB", {
                         year: "numeric",
                         month: "long",
                         day: "numeric",
@@ -123,8 +123,9 @@ export default function Orders() {
                       <span className={styles.label}>طريقة الدفع:</span>
                       <span>
                         {order.paymentMethod === "CASH" && "💵 الدفع عند الاستلام"}
-                        {order.paymentMethod === "CARD" && "💳 بطاقة ائتمانية"}
-                        {order.paymentMethod === "ONLINE" && "🌐 الدفع الإلكتروني"}
+                        
+                        {/* {order.paymentMethod === "CARD" && "💳 بطاقة ائتمانية"} */}
+                        {/* {order.paymentMethod === "ONLINE" && "🌐 الدفع الإلكتروني"} */}
                       </span>
                     </div>
                   </div>

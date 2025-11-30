@@ -193,7 +193,7 @@ export default function Checkout() {
                   <span>💵 الدفع عند الاستلام</span>
                 </label>
 
-                <label className={styles.paymentOption}>
+                {/* <label className={styles.paymentOption}>
                   <input
                     type="radio"
                     name="paymentMethod"
@@ -217,7 +217,7 @@ export default function Checkout() {
                     }
                   />
                   <span>🌐 الدفع الإلكتروني</span>
-                </label>
+                </label> */}
               </div>
 
               <button

@@ -174,7 +174,7 @@ export default function AdminOrders() {
                     <td>{order.user?.name || order.customerName || "غير محدد"}</td>
                     <td>{order.totalAmount} ج.م</td>
                     <td>{getStatusBadge(order.status)}</td>
-                    <td>{new Date(order.createdAt).toLocaleDateString("ar-SA")}</td>
+                    <td>{new Date(order.createdAt).toLocaleDateString("en-GB")}</td>
                     <td>
                       <div className={styles.actionButtons}>
                         <Link href={`/orders/${order.id}`} className="btn btn-sm btn-primary">

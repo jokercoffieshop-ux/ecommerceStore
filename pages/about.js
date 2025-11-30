@@ -8,7 +8,7 @@ export default function About() {
         {/* Hero Section */}
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1 className={styles.title}>☕ عن بن تركي</h1>
+            <h1 className={styles.title}> عن بن تركي</h1>
             <div className={styles.divider}></div>
             <p className={styles.subtitle}>رحلة القهوة من الحبة إلى الفنجان</p>
           </div>
@@ -108,7 +108,7 @@ export default function About() {
               <div className={styles.statLabel}>نوع قهوة</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>15+</div>
+              <div className={styles.statNumber}>1+</div>
               <div className={styles.statLabel}>دولة</div>
             </div>
             <div className={styles.statCard}>
