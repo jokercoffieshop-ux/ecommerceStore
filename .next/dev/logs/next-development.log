@@ -1,0 +1,191 @@
+[00:00:01.071] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.242] Server  LOG      ✓ Ready in 860ms
+[00:00:16.123] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:52.554] Server  LOG     Raw fields from formidable: {}
+[00:00:52.556] Server  LOG     Raw files from formidable: {}
+[00:00:52.557] Server  LOG     Normalized fields: {}
+[00:00:52.558] Server  LOG     Normalized files: {}
+[00:00:52.559] Server  LOG     Parsed fields: {}
+[00:00:52.561] Server  LOG     Parsed files: {}
+[00:00:52.594] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__844c1454._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.600] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__924ec13b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.635] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\compiled\next-server\pages-api-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.652] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\f5964_next_dist_f0ec3602._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.659] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.668] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.671] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.672] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.681] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.684] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:52.686] Server  ERROR   Validation error: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/[A-Z]/",
+    "path": [
+      "password"
+    ],
+    "message": "كلمة المرور يجب أن تحتوي على حرف كبير واحد على الأقل"
+  }
+]
+[00:01:45.799] Server  LOG     Raw fields from formidable: {}
+[00:01:45.800] Server  LOG     Raw files from formidable: {}
+[00:01:45.801] Server  LOG     Normalized fields: {}
+[00:01:45.802] Server  LOG     Normalized files: {}
+[00:01:45.803] Server  LOG     Parsed fields: {}
+[00:01:45.804] Server  LOG     Parsed files: {}
+[00:01:45.807] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__844c1454._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.808] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__924ec13b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.811] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\compiled\next-server\pages-api-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.813] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\f5964_next_dist_f0ec3602._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.814] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.817] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.818] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.819] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.820] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.821] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:45.822] Server  ERROR   Validation error: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/[A-Z]/",
+    "path": [
+      "password"
+    ],
+    "message": "كلمة المرور يجب أن تحتوي على حرف كبير واحد على الأقل"
+  }
+]
+[00:01:50.712] Server  LOG     Raw fields from formidable: {}
+[00:01:50.713] Server  LOG     Raw files from formidable: {}
+[00:01:50.713] Server  LOG     Normalized fields: {}
+[00:01:50.715] Server  LOG     Normalized files: {}
+[00:01:50.716] Server  LOG     Parsed fields: {}
+[00:01:50.717] Server  LOG     Parsed files: {}
+[00:01:50.720] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__844c1454._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.721] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__924ec13b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.725] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\compiled\next-server\pages-api-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.726] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\f5964_next_dist_f0ec3602._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.728] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.729] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.730] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.731] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.732] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.733] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:50.734] Server  ERROR   Validation error: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/[A-Z]/",
+    "path": [
+      "password"
+    ],
+    "message": "كلمة المرور يجب أن تحتوي على حرف كبير واحد على الأقل"
+  }
+]
+[00:02:21.754] Server  LOG     Raw fields from formidable: {}
+[00:02:21.755] Server  LOG     Raw files from formidable: {}
+[00:02:21.755] Server  LOG     Normalized fields: {}
+[00:02:21.756] Server  LOG     Normalized files: {}
+[00:02:21.757] Server  LOG     Parsed fields: {}
+[00:02:21.758] Server  LOG     Parsed files: {}
+[00:02:21.762] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__844c1454._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.763] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__924ec13b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.765] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\compiled\next-server\pages-api-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.765] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\f5964_next_dist_f0ec3602._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.766] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.767] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.769] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.770] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.772] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.773] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:21.774] Server  ERROR   Validation error: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/[A-Z]/",
+    "path": [
+      "password"
+    ],
+    "message": "كلمة المرور يجب أن تحتوي على حرف كبير واحد على الأقل"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/[a-z]/",
+    "path": [
+      "password"
+    ],
+    "message": "كلمة المرور يجب أن تحتوي على حرف صغير واحد على الأقل"
+  }
+]
+[00:02:33.630] Server  LOG     Raw fields from formidable: {}
+[00:02:33.631] Server  LOG     Raw files from formidable: {}
+[00:02:33.631] Server  LOG     Normalized fields: {}
+[00:02:33.632] Server  LOG     Normalized files: {}
+[00:02:33.634] Server  LOG     Parsed fields: {}
+[00:02:33.635] Server  LOG     Parsed files: {}
+[00:02:33.639] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__844c1454._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.639] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__924ec13b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.640] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\compiled\next-server\pages-api-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.641] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\f5964_next_dist_f0ec3602._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.642] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.643] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.644] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.644] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.645] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.646] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:33.648] Server  ERROR   Validation error: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/[A-Z]/",
+    "path": [
+      "password"
+    ],
+    "message": "كلمة المرور يجب أن تحتوي على حرف كبير واحد على الأقل"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/[a-z]/",
+    "path": [
+      "password"
+    ],
+    "message": "كلمة المرور يجب أن تحتوي على حرف صغير واحد على الأقل"
+  }
+]
+[00:03:34.720] Server  LOG     Raw fields from formidable: {}
+[00:03:34.721] Server  LOG     Raw files from formidable: {}
+[00:03:34.721] Server  LOG     Normalized fields: {}
+[00:03:34.722] Server  LOG     Normalized files: {}
+[00:03:34.723] Server  LOG     Parsed fields: {}
+[00:03:34.723] Server  LOG     Parsed files: {}
+[00:03:34.726] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__844c1454._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.727] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\[root-of-the-server]__924ec13b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.730] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\compiled\next-server\pages-api-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.730] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\.next\dev\server\chunks\f5964_next_dist_f0ec3602._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.731] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.732] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.733] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.733] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.734] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.735] Server  ERROR   C:\Users\ya177\Downloads\coffe-project\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:03:34.736] Server  ERROR   Validation error: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^(\\+20|0)?1[0-2,5]{1}[0-9]{8}$/",
+    "path": [
+      "phone"
+    ],
+    "message": "رقم الهاتف يجب أن يكون مصري صحيح (مثال: +201012345678 أو 01012345678)"
+  }
+]

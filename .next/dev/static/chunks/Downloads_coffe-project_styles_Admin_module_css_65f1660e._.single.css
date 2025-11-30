@@ -1,0 +1,541 @@
+/* [project]/Downloads/coffe-project/styles/Admin.module.css [client] (css) */
+.Admin-module__Ak_dZW__adminContainer {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.Admin-module__Ak_dZW__header {
+  border-bottom: 2px solid var(--coffee-light);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__header h1 {
+  color: var(--coffee-dark);
+  margin: 0;
+  font-size: 2rem;
+}
+
+.Admin-module__Ak_dZW__btnPrimary {
+  background-color: var(--coffee-brown);
+  color: var(--coffee-white);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__btnPrimary:hover {
+  background-color: var(--coffee-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.Admin-module__Ak_dZW__btnSecondary {
+  color: #fff;
+  cursor: pointer;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 8px;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__btnSecondary:hover {
+  background-color: #5a6268;
+}
+
+.Admin-module__Ak_dZW__btnEdit {
+  color: #fff;
+  cursor: pointer;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 6px;
+  margin-left: .5rem;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__btnEdit:hover {
+  background-color: #138496;
+}
+
+.Admin-module__Ak_dZW__btnDelete {
+  color: #fff;
+  cursor: pointer;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__btnDelete:hover {
+  background-color: #c82333;
+}
+
+.Admin-module__Ak_dZW__tableContainer {
+  background: var(--coffee-white);
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.Admin-module__Ak_dZW__tableContainer table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Admin-module__Ak_dZW__tableContainer th {
+  background-color: var(--coffee-brown);
+  color: var(--coffee-white);
+  text-align: right;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.Admin-module__Ak_dZW__tableContainer td {
+  text-align: right;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem;
+}
+
+.Admin-module__Ak_dZW__tableContainer tr:hover {
+  background-color: #f8f9fa;
+}
+
+.Admin-module__Ak_dZW__categoryImage {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+}
+
+.Admin-module__Ak_dZW__productImage {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+}
+
+.Admin-module__Ak_dZW__productName {
+  color: var(--coffee-dark);
+  margin-bottom: .25rem;
+  font-weight: 600;
+}
+
+.Admin-module__Ak_dZW__productNameEn {
+  color: #6c757d;
+  font-size: .875rem;
+}
+
+.Admin-module__Ak_dZW__stockGood {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.Admin-module__Ak_dZW__stockLow {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.Admin-module__Ak_dZW__noImage {
+  color: #6c757d;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: .75rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__actions {
+  justify-content: flex-start;
+  gap: .5rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__emptyState {
+  text-align: center;
+  color: #6c757d;
+  padding: 4rem 2rem;
+}
+
+.Admin-module__Ak_dZW__emptyState p {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.Admin-module__Ak_dZW__modal {
+  z-index: 1000;
+  background-color: #00000080;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.Admin-module__Ak_dZW__modalContent {
+  background: var(--coffee-white);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  box-shadow: var(--shadow-lg);
+  border-radius: 12px;
+  overflow-y: auto;
+}
+
+.Admin-module__Ak_dZW__modalHeader {
+  border-bottom: 1px solid #e9ecef;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__modalHeader h2 {
+  color: var(--coffee-dark);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.Admin-module__Ak_dZW__closeBtn {
+  color: #6c757d;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 2rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__closeBtn:hover {
+  color: var(--coffee-dark);
+  background-color: #f8f9fa;
+}
+
+.Admin-module__Ak_dZW__modalContent form {
+  padding: 1.5rem;
+}
+
+.Admin-module__Ak_dZW__formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.Admin-module__Ak_dZW__formGroup label {
+  color: var(--coffee-dark);
+  margin-bottom: .5rem;
+  font-weight: 600;
+  display: block;
+}
+
+.Admin-module__Ak_dZW__formGroup input[type="text"], .Admin-module__Ak_dZW__formGroup input[type="number"], .Admin-module__Ak_dZW__formGroup input[type="email"], .Admin-module__Ak_dZW__formGroup input[type="password"], .Admin-module__Ak_dZW__formGroup input[type="tel"], .Admin-module__Ak_dZW__formGroup textarea, .Admin-module__Ak_dZW__formGroup select {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  width: 100%;
+  padding: .75rem;
+  font-family: Cairo, Tajawal, sans-serif;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__formGroup input:focus, .Admin-module__Ak_dZW__formGroup textarea:focus, .Admin-module__Ak_dZW__formGroup select:focus {
+  border-color: var(--coffee-brown);
+  outline: none;
+  box-shadow: 0 0 0 3px #6f4e371a;
+}
+
+.Admin-module__Ak_dZW__formGroup input[type="file"] {
+  padding: .5rem;
+}
+
+.Admin-module__Ak_dZW__formRow {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  display: grid;
+}
+
+.Admin-module__Ak_dZW__checkbox {
+  cursor: pointer;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__checkbox input[type="checkbox"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.Admin-module__Ak_dZW__modalActions {
+  border-top: 1px solid #e9ecef;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__productGrid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.Admin-module__Ak_dZW__productCard {
+  background: var(--coffee-white);
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  transition: all .3s;
+  overflow: hidden;
+}
+
+.Admin-module__Ak_dZW__productCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.Admin-module__Ak_dZW__productImage {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.Admin-module__Ak_dZW__productInfo {
+  padding: 1rem;
+}
+
+.Admin-module__Ak_dZW__productName {
+  color: var(--coffee-dark);
+  margin-bottom: .5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.Admin-module__Ak_dZW__productPrice {
+  color: var(--coffee-brown);
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.Admin-module__Ak_dZW__productStock {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+}
+
+.Admin-module__Ak_dZW__filters {
+  background: var(--coffee-white);
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.Admin-module__Ak_dZW__filterRow {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: end;
+  gap: 1rem;
+  display: grid;
+}
+
+.Admin-module__Ak_dZW__searchInput {
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  width: 100%;
+  padding: .75rem 1rem;
+  font-family: Cairo, Tajawal, sans-serif;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__searchInput:focus {
+  border-color: var(--coffee-brown);
+  outline: none;
+  box-shadow: 0 0 0 3px #6f4e371a;
+}
+
+.Admin-module__Ak_dZW__searchInput::placeholder {
+  color: #999;
+}
+
+.Admin-module__Ak_dZW__pagination {
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__pagination button {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__pagination button:hover:not(:disabled) {
+  background-color: var(--coffee-brown);
+  color: #fff;
+  border-color: var(--coffee-brown);
+}
+
+.Admin-module__Ak_dZW__pagination button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.Admin-module__Ak_dZW__pagination .Admin-module__Ak_dZW__active {
+  background-color: var(--coffee-brown);
+  color: #fff;
+  border-color: var(--coffee-brown);
+}
+
+.Admin-module__Ak_dZW__badge {
+  text-align: center;
+  border-radius: 6px;
+  padding: .375rem .75rem;
+  font-size: .875rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.Admin-module__Ak_dZW__badgeSuccess {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.Admin-module__Ak_dZW__badgeDanger {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.Admin-module__Ak_dZW__badgeWarning {
+  color: #856404;
+  background-color: #fff3cd;
+}
+
+.Admin-module__Ak_dZW__badgeInfo {
+  color: #0c5460;
+  background-color: #d1ecf1;
+}
+
+.Admin-module__Ak_dZW__badgePrimary {
+  color: #004085;
+  background-color: #cce5ff;
+}
+
+.Admin-module__Ak_dZW__badgeSecondary {
+  color: #383d41;
+  background-color: #e2e3e5;
+}
+
+.Admin-module__Ak_dZW__actionButtons {
+  flex-wrap: wrap;
+  gap: .5rem;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__filterSelect {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  font-family: Cairo, Tajawal, sans-serif;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+.Admin-module__Ak_dZW__filterSelect:focus {
+  border-color: var(--coffee-brown);
+  outline: none;
+  box-shadow: 0 0 0 3px #6f4e371a;
+}
+
+.Admin-module__Ak_dZW__imagePreview {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.Admin-module__Ak_dZW__imagePreview img {
+  max-width: 200px;
+  max-height: 200px;
+  box-shadow: var(--shadow-sm);
+  border-radius: 8px;
+}
+
+.Admin-module__Ak_dZW__closeButton {
+  color: #6c757d;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 2rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.Admin-module__Ak_dZW__closeButton:hover {
+  color: var(--coffee-dark);
+  background-color: #f8f9fa;
+}
+
+.Admin-module__Ak_dZW__form {
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .Admin-module__Ak_dZW__formRow, .Admin-module__Ak_dZW__filterRow {
+    grid-template-columns: 1fr;
+  }
+
+  .Admin-module__Ak_dZW__actionButtons {
+    flex-direction: column;
+  }
+
+  .Admin-module__Ak_dZW__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .Admin-module__Ak_dZW__formRow, .Admin-module__Ak_dZW__filterRow, .Admin-module__Ak_dZW__productGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .Admin-module__Ak_dZW__modalContent {
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=Downloads_coffe-project_styles_Admin_module_css_65f1660e._.single.css.map*/

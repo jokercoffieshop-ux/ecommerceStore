@@ -1,0 +1,409 @@
+/* Profile Page Styles with Animations */
+
+.profileContainer {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profileCard {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.profileCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--coffee-dark), var(--coffee-brown), var(--coffee-medium));
+  animation: shimmer 3s linear infinite;
+  background-size: 200% auto;
+}
+
+@keyframes shimmer {
+  to { background-position: 200% center; }
+}
+
+.profileHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profileHeader h1 {
+  font-size: 2.5rem;
+  color: var(--coffee-dark);
+  margin-bottom: 1rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.headerLine {
+  width: 100px;
+  height: 3px;
+  background: var(--coffee-brown);
+  margin: 0 auto;
+  animation: expandLine 1s ease-out;
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100px;
+    opacity: 1;
+  }
+}
+
+/* Avatar Section */
+.avatarSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.avatarContainer {
+  position: relative;
+  animation: scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--coffee-brown);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(139, 69, 19, 0.3);
+}
+
+.avatarUpload {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: var(--coffee-brown);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.avatarUpload:hover {
+  background: var(--coffee-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.avatarUpload span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Profile Info */
+.profileInfo {
+  animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f8f4ed 0%, #fff 100%);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  animation: slideInRight 0.6s ease-out backwards;
+}
+
+.infoRow:nth-child(1) { animation-delay: 0.1s; }
+.infoRow:nth-child(2) { animation-delay: 0.2s; }
+.infoRow:nth-child(3) { animation-delay: 0.3s; }
+.infoRow:nth-child(4) { animation-delay: 0.4s; }
+.infoRow:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.infoRow:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: var(--coffee-dark);
+  font-size: 1.1rem;
+}
+
+.infoValue {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Badges */
+.badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.badgeADMIN {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+}
+
+.badgeSTAFF {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.badgeCLIENT {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+}
+
+.badgeSuccess {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+}
+
+.badgeWarning {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  color: #333;
+}
+
+/* Buttons */
+.btnEdit {
+  width: 100%;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, var(--coffee-brown), var(--coffee-dark));
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnEdit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+}
+
+/* Form */
+.profileForm {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--coffee-dark);
+  font-size: 1rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Cairo', sans-serif;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--coffee-brown);
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.inputError {
+  border-color: #dc3545 !important;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btnSave,
+.btnCancel {
+  flex: 1;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Cairo', sans-serif;
+}
+
+.btnSave {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.btnSave:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+}
+
+.btnSave:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnCancel {
+  background: linear-gradient(135deg, #6c757d, #5a6268);
+  color: white;
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+}
+
+.btnCancel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(108, 117, 125, 0.4);
+}
+
+/* Alerts */
+.alert {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alertSuccess {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alertError {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profileCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .profileHeader h1 {
+    font-size: 2rem;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .formActions {
+    flex-direction: column;
+  }
+}

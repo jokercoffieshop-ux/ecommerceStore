@@ -1,0 +1,416 @@
+/* Hero Section with Animations */
+.hero {
+  background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-brown) 50%, var(--coffee-medium) 100%);
+  color: var(--coffee-white);
+  padding: 8rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logoContainer {
+  margin-bottom: 2rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.storeName {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #fff, #f4e4c1, #fff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.logoLine {
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--coffee-cream), transparent);
+  margin: 1rem auto;
+  animation: expandLine 1.5s ease-out;
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 200px;
+    opacity: 1;
+  }
+}
+
+.tagline {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+  font-weight: 600;
+  animation: fadeIn 1.5s ease-out 0.3s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.95;
+}
+
+.subtitle {
+  font-size: 1.3rem !important;
+  opacity: 0.85 !important;
+  margin-bottom: 2.5rem !important;
+  animation: fadeIn 1.5s ease-out 0.6s both;
+}
+
+.userWelcome {
+  margin-top: 2rem;
+}
+
+.userWelcome p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btnPrimary,
+.btnSecondary {
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Cairo', sans-serif;
+}
+
+.btnPrimary {
+  background-color: var(--coffee-white);
+  color: var(--coffee-dark);
+}
+
+.btnPrimary:hover {
+  background-color: var(--coffee-cream);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: var(--coffee-white);
+  border: 2px solid var(--coffee-white);
+}
+
+.btnSecondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+
+.feature {
+  background: var(--coffee-white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fadeInScale 0.6s ease-out backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature:nth-child(1) { animation-delay: 0.1s; }
+.feature:nth-child(2) { animation-delay: 0.2s; }
+.feature:nth-child(3) { animation-delay: 0.3s; }
+.feature:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.feature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(139, 69, 19, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.feature:hover::before {
+  left: 100%;
+}
+
+.feature:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-12px) scale(1.02);
+}
+
+.featureIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.feature h3 {
+  color: var(--coffee-dark);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature p {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cta {
+  background: linear-gradient(135deg, var(--coffee-cream) 0%, var(--coffee-light) 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+  margin: 4rem auto;
+  max-width: 800px;
+  box-shadow: var(--shadow-md);
+}
+
+.cta h2 {
+  color: var(--coffee-dark);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  color: var(--coffee-brown);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background-color: var(--coffee-brown);
+  color: white;
+  padding: 1.25rem 3rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Cairo', sans-serif;
+}
+
+.ctaBtn:hover {
+  background-color: var(--coffee-medium);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* قسم أنواع القهوة */
+.coffeeTypes {
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f8f5f0 0%, #fff 100%);
+  border-radius: 16px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--coffee-dark);
+  margin-bottom: 3rem;
+  font-weight: 700;
+  animation: fadeInDown 1s ease-out;
+}
+
+.coffeeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coffeeCard {
+  background: var(--coffee-white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+}
+
+.coffeeCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.coffeeEmoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.coffeeCard h3 {
+  color: var(--coffee-brown);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.coffeeCard p {
+  color: var(--coffee-dark);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent p {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .coffeeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
+  }
+}
+

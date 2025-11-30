@@ -1,0 +1,192 @@
+/* [project]/Downloads/coffe-project/styles/Orders.module.css [client] (css) */
+.Orders-module__WwcqhG__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.Orders-module__WwcqhG__header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.Orders-module__WwcqhG__header h1 {
+  color: var(--coffee-dark);
+  font-size: 2rem;
+}
+
+.Orders-module__WwcqhG__shopBtn {
+  background-color: var(--coffee-brown);
+  color: #fff;
+  border-radius: 8px;
+  padding: .75rem 1.5rem;
+  font-family: Cairo, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.Orders-module__WwcqhG__shopBtn:hover {
+  background-color: var(--coffee-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.Orders-module__WwcqhG__ordersList {
+  flex-direction: column;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.Orders-module__WwcqhG__orderCard {
+  background: var(--coffee-white);
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  transition: all .3s;
+  overflow: hidden;
+}
+
+.Orders-module__WwcqhG__orderCard:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.Orders-module__WwcqhG__orderHeader {
+  background: linear-gradient(135deg, var(--coffee-cream) 0%, var(--coffee-light) 100%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.Orders-module__WwcqhG__orderHeader h3 {
+  color: var(--coffee-dark);
+  margin-bottom: .25rem;
+  font-size: 1.25rem;
+}
+
+.Orders-module__WwcqhG__orderDate {
+  color: #6c757d;
+  font-size: .9rem;
+}
+
+.Orders-module__WwcqhG__orderBody {
+  padding: 1.5rem;
+}
+
+.Orders-module__WwcqhG__orderInfo {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+}
+
+.Orders-module__WwcqhG__infoItem {
+  flex-direction: column;
+  gap: .25rem;
+  display: flex;
+}
+
+.Orders-module__WwcqhG__label {
+  color: var(--coffee-brown);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.Orders-module__WwcqhG__orderItems {
+  background: var(--coffee-bg);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.Orders-module__WwcqhG__orderItems h4 {
+  color: var(--coffee-dark);
+  margin-bottom: .75rem;
+}
+
+.Orders-module__WwcqhG__orderItem {
+  border-bottom: 1px solid #e9ecef;
+  justify-content: space-between;
+  padding: .5rem 0;
+  display: flex;
+}
+
+.Orders-module__WwcqhG__orderItem:last-child {
+  border-bottom: none;
+}
+
+.Orders-module__WwcqhG__orderFooter {
+  border-top: 2px solid #e9ecef;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.Orders-module__WwcqhG__orderTotal {
+  flex-direction: column;
+  gap: .25rem;
+  display: flex;
+}
+
+.Orders-module__WwcqhG__orderTotal span:first-child {
+  color: #6c757d;
+  font-size: .9rem;
+}
+
+.Orders-module__WwcqhG__totalAmount {
+  color: var(--coffee-brown);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Orders-module__WwcqhG__viewBtn {
+  background-color: var(--coffee-brown);
+  color: #fff;
+  border-radius: 8px;
+  padding: .75rem 1.5rem;
+  font-family: Cairo, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.Orders-module__WwcqhG__viewBtn:hover {
+  background-color: var(--coffee-medium);
+  transform: translateY(-2px);
+}
+
+.Orders-module__WwcqhG__emptyState {
+  text-align: center;
+  background: var(--coffee-white);
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  padding: 4rem 2rem;
+}
+
+.Orders-module__WwcqhG__emptyState p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .Orders-module__WwcqhG__header, .Orders-module__WwcqhG__orderHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .Orders-module__WwcqhG__orderFooter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .Orders-module__WwcqhG__viewBtn {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=Downloads_coffe-project_styles_Orders_module_css_65f1660e._.single.css.map*/

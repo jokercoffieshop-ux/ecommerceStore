@@ -1,0 +1,170 @@
+/* [project]/Downloads/coffe-project/styles/Auth.module.css [client] (css) */
+.Auth-module__Scr76q__authContainer {
+  background: linear-gradient(135deg, var(--coffee-bg) 0%, var(--coffee-cream) 100%);
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.Auth-module__Scr76q__authCard {
+  background: var(--coffee-white);
+  box-shadow: var(--shadow-lg);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  padding: 3rem;
+}
+
+.Auth-module__Scr76q__authTitle {
+  color: var(--coffee-dark);
+  text-align: center;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+.Auth-module__Scr76q__authSubtitle {
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.Auth-module__Scr76q__authForm, .Auth-module__Scr76q__formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.Auth-module__Scr76q__formGroup label {
+  color: var(--coffee-dark);
+  margin-bottom: .5rem;
+  font-size: .95rem;
+  font-weight: 600;
+  display: block;
+}
+
+.Auth-module__Scr76q__formGroup input, .Auth-module__Scr76q__formGroup textarea, .Auth-module__Scr76q__formGroup select {
+  background: #fff;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  width: 100%;
+  padding: .875rem 1rem;
+  font-family: Cairo, Tajawal, sans-serif;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+.Auth-module__Scr76q__formGroup input:focus, .Auth-module__Scr76q__formGroup textarea:focus, .Auth-module__Scr76q__formGroup select:focus {
+  border-color: var(--coffee-brown);
+  outline: none;
+  box-shadow: 0 0 0 4px #6f4e371a;
+}
+
+.Auth-module__Scr76q__formGroup input::placeholder {
+  color: #adb5bd;
+}
+
+.Auth-module__Scr76q__error {
+  color: #dc3545;
+  margin-top: .25rem;
+  font-size: .875rem;
+  display: block;
+}
+
+.Auth-module__Scr76q__forgotPassword {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.Auth-module__Scr76q__forgotPassword a {
+  color: var(--coffee-brown);
+  font-size: .875rem;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Auth-module__Scr76q__forgotPassword a:hover {
+  color: var(--coffee-dark);
+  text-decoration: underline;
+}
+
+.Auth-module__Scr76q__submitBtn {
+  background: linear-gradient(135deg, var(--coffee-brown) 0%, var(--coffee-medium) 100%);
+  width: 100%;
+  color: var(--coffee-white);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: Cairo, Tajawal, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.Auth-module__Scr76q__submitBtn:hover:not(:disabled) {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.Auth-module__Scr76q__submitBtn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.Auth-module__Scr76q__authFooter {
+  text-align: center;
+  color: #6c757d;
+  font-size: .95rem;
+}
+
+.Auth-module__Scr76q__authFooter a {
+  color: var(--coffee-brown);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Auth-module__Scr76q__authFooter a:hover {
+  color: var(--coffee-dark);
+  text-decoration: underline;
+}
+
+.Auth-module__Scr76q__fileUpload {
+  margin-top: .5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Auth-module__Scr76q__fileUpload input[type="file"] {
+  cursor: pointer;
+  padding: .75rem;
+}
+
+.Auth-module__Scr76q__filePreview {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.Auth-module__Scr76q__filePreview img {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+@media (max-width: 576px) {
+  .Auth-module__Scr76q__authCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .Auth-module__Scr76q__authTitle {
+    font-size: 1.5rem;
+  }
+
+  .Auth-module__Scr76q__authSubtitle {
+    font-size: .9rem;
+  }
+}
+
+/*# sourceMappingURL=Downloads_coffe-project_styles_Auth_module_css_65f1660e._.single.css.map*/

@@ -1,0 +1,77 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/": [
+      "static/chunks/[root-of-the-server]__09aea6db._.js",
+      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
+      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
+      "static/chunks/f5964_next_dist_client_bdd29016._.js",
+      "static/chunks/f5964_next_dist_2e793457._.js",
+      "static/chunks/f5964_next_0741d0a5._.js",
+      "static/chunks/f5964_react-dom_25b217df._.js",
+      "static/chunks/f5964_3dcb3eb8._.js",
+      "static/chunks/Downloads_coffe-project_styles_450af3e5._.css",
+      "static/chunks/Downloads_coffe-project_pages_index_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_coffe-project_pages_index_c792f302._.js"
+    ],
+    "/_app": [
+      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
+      "static/chunks/f5964_next_dist_shared_lib_5a9b700b._.js",
+      "static/chunks/f5964_next_dist_client_253310ec._.js",
+      "static/chunks/f5964_next_dist_2e793457._.js",
+      "static/chunks/f5964_next_router_df011190.js",
+      "static/chunks/f5964_react-dom_25b217df._.js",
+      "static/chunks/f5964_3dcb3eb8._.js",
+      "static/chunks/[root-of-the-server]__3c6a2b9d._.js",
+      "static/chunks/Downloads_coffe-project_styles_globals_06b15a55.css",
+      "static/chunks/Downloads_coffe-project_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_coffe-project_pages__app_dcfbf71f._.js"
+    ],
+    "/_error": [
+      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
+      "static/chunks/f5964_next_dist_shared_lib_eaeb340e._.js",
+      "static/chunks/f5964_next_dist_client_253310ec._.js",
+      "static/chunks/f5964_next_dist_3bc9a035._.js",
+      "static/chunks/f5964_next_error_9b61c402.js",
+      "static/chunks/[next]_entry_page-loader_ts_b78f5506._.js",
+      "static/chunks/f5964_react-dom_25b217df._.js",
+      "static/chunks/f5964_068ccb94._.js",
+      "static/chunks/[root-of-the-server]__d43397d8._.js",
+      "static/chunks/Downloads_coffe-project_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_coffe-project_pages__error_af00b4e9._.js"
+    ],
+    "/about": [
+      "static/chunks/[root-of-the-server]__33a28b06._.js",
+      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
+      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
+      "static/chunks/f5964_next_dist_client_bdd29016._.js",
+      "static/chunks/f5964_next_dist_2e793457._.js",
+      "static/chunks/f5964_next_8cae3839._.js",
+      "static/chunks/f5964_react-dom_25b217df._.js",
+      "static/chunks/f5964_3dcb3eb8._.js",
+      "static/chunks/Downloads_coffe-project_styles_2743f233._.css",
+      "static/chunks/Downloads_coffe-project_pages_about_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_coffe-project_pages_about_b24c41e3._.js"
+    ],
+    "/register": [
+      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
+      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
+      "static/chunks/f5964_next_dist_client_bdd29016._.js",
+      "static/chunks/f5964_next_dist_2e793457._.js",
+      "static/chunks/f5964_next_8cae3839._.js",
+      "static/chunks/f5964_react-dom_25b217df._.js",
+      "static/chunks/f5964_3dcb3eb8._.js",
+      "static/chunks/[root-of-the-server]__6c88afe7._.js",
+      "static/chunks/Downloads_coffe-project_styles_968cb622._.css",
+      "static/chunks/Downloads_coffe-project_pages_register_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_coffe-project_pages_register_6e500a1f._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": []
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js"
+];

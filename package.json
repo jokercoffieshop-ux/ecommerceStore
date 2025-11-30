@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.0.1",
+    "@prisma/client": "^7.0.1",
+    "bcrypt": "^6.0.0",
+    "cookie": "^1.0.2",
+    "formidable": "^3.5.4",
+    "jsonwebtoken": "^9.0.2",
+    "next": "^16.0.4",
+    "nodemailer": "^7.0.10",
+    "pg": "^8.16.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "prisma": "^7.0.1"
+  }
+}

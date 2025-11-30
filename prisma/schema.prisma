@@ -1,0 +1,183 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  CLIENT
+  ADMIN
+  STAFF
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String   @unique
+  password   String
+  avatarUrl  String?
+  phone      String?
+  role       Role     @default(CLIENT)
+  isVerified Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  // Relations
+  otps       Otp[]
+  cart       Cart?
+  orders     Order[]
+}
+
+model Otp {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  code      String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  // Relations
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// Category Model - فئات المنتجات
+model Category {
+  id          Int       @id @default(autoincrement())
+  nameAr      String    // الاسم بالعربية
+  nameEn      String?   // الاسم بالإنجليزية (اختياري)
+  descriptionAr String? @db.Text // الوصف بالعربية
+  descriptionEn String? @db.Text // الوصف بالإنجليزية (اختياري)
+  imageUrl    String?   // صورة الفئة
+  isActive    Boolean   @default(true) // حالة التفعيل
+  order       Int       @default(0) // ترتيب العرض
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  // Relations
+  products    Product[]
+
+  @@index([isActive])
+}
+
+// Product Model - المنتجات
+model Product {
+  id            Int       @id @default(autoincrement())
+  nameAr        String    // الاسم بالعربية
+  nameEn        String?   // الاسم بالإنجليزية (اختياري)
+  descriptionAr String?   @db.Text // الوصف بالعربية
+  descriptionEn String?   @db.Text // الوصف بالإنجليزية (اختياري)
+  price         Decimal   @db.Decimal(10, 2) // السعر
+  imageUrl      String?   // صورة المنتج
+  categoryId    Int       // معرف الفئة
+  stock         Int       @default(0) // الكمية في المخزون
+  isAvailable   Boolean   @default(true) // حالة التوفر
+  size          String?   // الحجم (صغير، وسط، كبير)
+  weight        String?   // الوزن
+  sku           String?   @unique // رمز المنتج
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Relations
+  category      Category  @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  cartItems     CartItem[]
+  orderItems    OrderItem[]
+
+  @@index([categoryId])
+  @@index([isAvailable])
+}
+
+// Cart Model - سلة المشتريات
+model Cart {
+  id        Int        @id @default(autoincrement())
+  userId    Int        @unique
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  // Relations
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items     CartItem[]
+}
+
+// CartItem Model - عناصر السلة
+model CartItem {
+  id        Int      @id @default(autoincrement())
+  cartId    Int
+  productId Int
+  quantity  Int      @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  cart      Cart     @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([cartId, productId])
+  @@index([cartId])
+  @@index([productId])
+}
+
+// Order Status Enum - حالات الطلب
+enum OrderStatus {
+  PENDING       // جديد - في انتظار المعالجة
+  PROCESSING    // قيد التحضير
+  SHIPPED       // تم الشحن
+  DELIVERED     // تم التوصيل
+  CANCELLED     // ملغى
+  REFUNDED      // مسترجع
+}
+
+// Payment Method Enum - طرق الدفع
+enum PaymentMethod {
+  CASH          // نقدي عند الاستلام
+  CARD          // بطاقة ائتمانية
+  ONLINE        // دفع إلكتروني
+}
+
+// Order Model - الطلبات
+model Order {
+  id            Int           @id @default(autoincrement())
+  userId        Int
+  orderNumber   String        @unique // رقم الطلب
+  status        OrderStatus   @default(PENDING)
+  paymentMethod PaymentMethod @default(CASH)
+  totalAmount   Decimal       @db.Decimal(10, 2) // المبلغ الإجمالي
+
+  // معلومات العميل والتوصيل
+  customerName  String
+  customerPhone String
+  customerEmail String?
+  address       String        @db.Text
+  city          String?
+  notes         String?       @db.Text // ملاحظات إضافية
+
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  // Relations
+  user          User          @relation(fields: [userId], references: [id], onDelete: Restrict)
+  items         OrderItem[]
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+// OrderItem Model - عناصر الطلب
+model OrderItem {
+  id        Int      @id @default(autoincrement())
+  orderId   Int
+  productId Int
+  quantity  Int
+  price     Decimal  @db.Decimal(10, 2) // السعر وقت الطلب
+  nameAr    String   // اسم المنتج وقت الطلب (للحفظ التاريخي)
+
+  // Relations
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@index([orderId])
+  @@index([productId])
+}

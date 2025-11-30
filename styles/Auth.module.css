@@ -1,0 +1,177 @@
+.authContainer {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, var(--coffee-bg) 0%, var(--coffee-cream) 100%);
+}
+
+.authCard {
+  background: var(--coffee-white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  padding: 3rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+.authTitle {
+  font-size: 2rem;
+  color: var(--coffee-dark);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.authSubtitle {
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.authForm {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--coffee-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+  background: white;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--coffee-brown);
+  box-shadow: 0 0 0 4px rgba(111, 78, 55, 0.1);
+}
+
+.formGroup input::placeholder {
+  color: #adb5bd;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.forgotPassword {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.forgotPassword a {
+  color: var(--coffee-brown);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgotPassword a:hover {
+  color: var(--coffee-dark);
+  text-decoration: underline;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--coffee-brown) 0%, var(--coffee-medium) 100%);
+  color: var(--coffee-white);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.authFooter {
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.authFooter a {
+  color: var(--coffee-brown);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.authFooter a:hover {
+  color: var(--coffee-dark);
+  text-decoration: underline;
+}
+
+/* File Upload */
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.fileUpload input[type="file"] {
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.filePreview {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.filePreview img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+@media (max-width: 576px) {
+  .authCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .authTitle {
+    font-size: 1.5rem;
+  }
+
+  .authSubtitle {
+    font-size: 0.9rem;
+  }
+}
+
