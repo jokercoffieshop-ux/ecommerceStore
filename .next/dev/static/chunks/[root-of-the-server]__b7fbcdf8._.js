@@ -897,6 +897,15 @@ function Layout({ children }) {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
                                                     lineNumber: 81,
                                                     columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/admin/users",
+                                                    onClick: closeMobileMenu,
+                                                    children: "المستخدمين"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/coffe-project/components/Layout.js",
+                                                    lineNumber: 84,
+                                                    columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true),
@@ -908,7 +917,7 @@ function Layout({ children }) {
                                                     children: "📦 المنتجات"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 90,
+                                                    lineNumber: 93,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -917,7 +926,7 @@ function Layout({ children }) {
                                                     children: "📋 الطلبات"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 93,
+                                                    lineNumber: 96,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
@@ -930,7 +939,7 @@ function Layout({ children }) {
                                                     children: "🛍️ المنتجات"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 102,
+                                                    lineNumber: 105,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -939,7 +948,7 @@ function Layout({ children }) {
                                                     children: "🛒 السلة"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 105,
+                                                    lineNumber: 108,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -948,7 +957,7 @@ function Layout({ children }) {
                                                     children: "📦 طلباتي"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 108,
+                                                    lineNumber: 111,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
@@ -964,7 +973,7 @@ function Layout({ children }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 116,
+                                                    lineNumber: 119,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -973,7 +982,7 @@ function Layout({ children }) {
                                                     children: "⚙️ الملف الشخصي"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 117,
+                                                    lineNumber: 120,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -982,13 +991,13 @@ function Layout({ children }) {
                                                     children: "🚪 تسجيل الخروج"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 120,
+                                                    lineNumber: 123,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                            lineNumber: 115,
+                                            lineNumber: 118,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1000,7 +1009,7 @@ function Layout({ children }) {
                                             children: "🛍️ المنتجات"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                            lineNumber: 127,
+                                            lineNumber: 130,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1009,7 +1018,7 @@ function Layout({ children }) {
                                             children: "🔑 تسجيل الدخول"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                            lineNumber: 130,
+                                            lineNumber: 133,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1018,7 +1027,7 @@ function Layout({ children }) {
                                             children: "✨ إنشاء حساب"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                            lineNumber: 133,
+                                            lineNumber: 136,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1045,7 +1054,7 @@ function Layout({ children }) {
                 onClick: closeMobileMenu
             }, void 0, false, {
                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                lineNumber: 144,
+                lineNumber: 147,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1053,7 +1062,7 @@ function Layout({ children }) {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                lineNumber: 150,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -1069,20 +1078,20 @@ function Layout({ children }) {
                                         children: "☕ بن تركي"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 155,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "أصالة القهوة العربية في كل فنجان"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 156,
+                                        lineNumber: 159,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                lineNumber: 154,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1092,7 +1101,7 @@ function Layout({ children }) {
                                         children: "روابط سريعة"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 160,
+                                        lineNumber: 163,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1103,12 +1112,12 @@ function Layout({ children }) {
                                                     children: "المنتجات"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 162,
+                                                    lineNumber: 165,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 162,
+                                                lineNumber: 165,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1117,12 +1126,12 @@ function Layout({ children }) {
                                                     children: "من نحن"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 163,
+                                                    lineNumber: 166,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 163,
+                                                lineNumber: 166,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1131,24 +1140,24 @@ function Layout({ children }) {
                                                     children: "اتصل بنا"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 164,
+                                                    lineNumber: 167,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 164,
+                                                lineNumber: 167,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 161,
+                                        lineNumber: 164,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                lineNumber: 159,
+                                lineNumber: 162,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1158,7 +1167,7 @@ function Layout({ children }) {
                                         children: "الدعم"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 169,
+                                        lineNumber: 172,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1169,12 +1178,12 @@ function Layout({ children }) {
                                                     children: "الأسئلة الشائعة"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 171,
+                                                    lineNumber: 174,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 171,
+                                                lineNumber: 174,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1183,12 +1192,12 @@ function Layout({ children }) {
                                                     children: "سياسة الخصوصية"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 172,
+                                                    lineNumber: 175,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 172,
+                                                lineNumber: 175,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1197,24 +1206,24 @@ function Layout({ children }) {
                                                     children: "الشروط والأحكام"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                    lineNumber: 173,
+                                                    lineNumber: 176,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 173,
+                                                lineNumber: 176,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 170,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                lineNumber: 168,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1224,7 +1233,7 @@ function Layout({ children }) {
                                         children: "تواصل معنا"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 178,
+                                        lineNumber: 181,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1233,39 +1242,39 @@ function Layout({ children }) {
                                                 children: "📧 info@benturki.com"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 180,
+                                                lineNumber: 183,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: "📱 +20 100 123 4567"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 181,
+                                                lineNumber: 184,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: "📍 القاهرة، جمهورية مصر العربية"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                                lineNumber: 182,
+                                                lineNumber: 185,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                        lineNumber: 179,
+                                        lineNumber: 182,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                                lineNumber: 177,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                        lineNumber: 153,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1274,18 +1283,18 @@ function Layout({ children }) {
                             children: "© 2024 بن تركي - جميع الحقوق محفوظة"
                         }, void 0, false, {
                             fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                            lineNumber: 188,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                        lineNumber: 187,
+                        lineNumber: 190,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Downloads/coffe-project/components/Layout.js",
-                lineNumber: 152,
+                lineNumber: 155,
                 columnNumber: 7
             }, this)
         ]
@@ -1315,21 +1324,32 @@ __turbopack_context__.v({
   "actions": "Admin-module__Ak_dZW__actions",
   "active": "Admin-module__Ak_dZW__active",
   "adminContainer": "Admin-module__Ak_dZW__adminContainer",
+  "alert": "Admin-module__Ak_dZW__alert",
+  "avatar": "Admin-module__Ak_dZW__avatar",
   "badge": "Admin-module__Ak_dZW__badge",
+  "badgeAdmin": "Admin-module__Ak_dZW__badgeAdmin",
+  "badgeClient": "Admin-module__Ak_dZW__badgeClient",
   "badgeDanger": "Admin-module__Ak_dZW__badgeDanger",
   "badgeInfo": "Admin-module__Ak_dZW__badgeInfo",
   "badgePrimary": "Admin-module__Ak_dZW__badgePrimary",
   "badgeSecondary": "Admin-module__Ak_dZW__badgeSecondary",
+  "badgeStaff": "Admin-module__Ak_dZW__badgeStaff",
   "badgeSuccess": "Admin-module__Ak_dZW__badgeSuccess",
   "badgeWarning": "Admin-module__Ak_dZW__badgeWarning",
+  "btnDanger": "Admin-module__Ak_dZW__btnDanger",
   "btnDelete": "Admin-module__Ak_dZW__btnDelete",
   "btnEdit": "Admin-module__Ak_dZW__btnEdit",
   "btnPrimary": "Admin-module__Ak_dZW__btnPrimary",
   "btnSecondary": "Admin-module__Ak_dZW__btnSecondary",
+  "btnView": "Admin-module__Ak_dZW__btnView",
   "categoryImage": "Admin-module__Ak_dZW__categoryImage",
   "checkbox": "Admin-module__Ak_dZW__checkbox",
+  "checkboxLabel": "Admin-module__Ak_dZW__checkboxLabel",
   "closeBtn": "Admin-module__Ak_dZW__closeBtn",
   "closeButton": "Admin-module__Ak_dZW__closeButton",
+  "container": "Admin-module__Ak_dZW__container",
+  "detailRow": "Admin-module__Ak_dZW__detailRow",
+  "detailSection": "Admin-module__Ak_dZW__detailSection",
   "emptyState": "Admin-module__Ak_dZW__emptyState",
   "filterRow": "Admin-module__Ak_dZW__filterRow",
   "filterSelect": "Admin-module__Ak_dZW__filterSelect",
@@ -1344,7 +1364,13 @@ __turbopack_context__.v({
   "modalContent": "Admin-module__Ak_dZW__modalContent",
   "modalHeader": "Admin-module__Ak_dZW__modalHeader",
   "noImage": "Admin-module__Ak_dZW__noImage",
+  "orderDate": "Admin-module__Ak_dZW__orderDate",
+  "orderItem": "Admin-module__Ak_dZW__orderItem",
+  "orderStatus": "Admin-module__Ak_dZW__orderStatus",
+  "ordersList": "Admin-module__Ak_dZW__ordersList",
   "pagination": "Admin-module__Ak_dZW__pagination",
+  "paginationBtn": "Admin-module__Ak_dZW__paginationBtn",
+  "paginationInfo": "Admin-module__Ak_dZW__paginationInfo",
   "productCard": "Admin-module__Ak_dZW__productCard",
   "productGrid": "Admin-module__Ak_dZW__productGrid",
   "productImage": "Admin-module__Ak_dZW__productImage",
@@ -1353,10 +1379,16 @@ __turbopack_context__.v({
   "productNameEn": "Admin-module__Ak_dZW__productNameEn",
   "productPrice": "Admin-module__Ak_dZW__productPrice",
   "productStock": "Admin-module__Ak_dZW__productStock",
+  "searchButton": "Admin-module__Ak_dZW__searchButton",
+  "searchForm": "Admin-module__Ak_dZW__searchForm",
   "searchInput": "Admin-module__Ak_dZW__searchInput",
   "stockGood": "Admin-module__Ak_dZW__stockGood",
   "stockLow": "Admin-module__Ak_dZW__stockLow",
+  "table": "Admin-module__Ak_dZW__table",
   "tableContainer": "Admin-module__Ak_dZW__tableContainer",
+  "userCell": "Admin-module__Ak_dZW__userCell",
+  "userDetails": "Admin-module__Ak_dZW__userDetails",
+  "warning": "Admin-module__Ak_dZW__warning",
 });
 }),
 "[project]/Downloads/coffe-project/pages/admin/categories.js [client] (ecmascript)", ((__turbopack_context__) => {

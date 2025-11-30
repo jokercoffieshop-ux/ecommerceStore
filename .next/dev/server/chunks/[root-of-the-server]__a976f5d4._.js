@@ -427,6 +427,7 @@ async function handler(req, res) {
                 requiresVerification: true
             });
         }
+        // userId: user.id, 
         // Generate JWT token
         const token = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$coffe$2d$project$2f$lib$2f$jwt$2e$js__$5b$api$5d$__$28$ecmascript$29$__["generateToken"])({
             id: user.id,

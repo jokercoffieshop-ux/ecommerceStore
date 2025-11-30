@@ -150,17 +150,112 @@
 }
 
 
-.addToCartBtn:hover:not(:disabled) {
-  background-color: var(--coffee-medium);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+/* زر إضافة للسلة - تصميم محسّن */
+.addToCartBtn {
+  background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(101, 67, 33, 0.3);
+  position: relative;
+  overflow: hidden;
+  min-width: 140px;
 }
 
-.addToCartBtn:disabled {
-  background-color: #6c757d;
-  cursor: not-allowed;
-  opacity: 0.6;
+/* تأثير الموجة عند الضغط */
+.addToCartBtn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  margin-top: 10px ;
 }
+
+.addToCartBtn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* حالة التمرير - للأزرار المفعّلة */
+.addToCartBtn:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--coffee-medium) 0%, var(--coffee-dark) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(101, 67, 33, 0.4);
+}
+
+/* حالة الضغط */
+.addToCartBtn:active:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(101, 67, 33, 0.3);
+}
+
+/* حالة التعطيل - غير متوفر */
+.addToCartBtn:disabled {
+  background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+  cursor: not-allowed;
+  opacity: 0.7;
+  box-shadow: none;
+  color: #ecf0f1;
+}
+
+/* أيقونة اختيارية للزر */
+.addToCartBtn::after {
+  content: '🛒';
+  margin-left: 8px;
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.addToCartBtn:hover:not(:disabled)::after {
+  transform: scale(1.2);
+}
+
+.addToCartBtn:disabled::after {
+  content: '✕';
+  color: #ecf0f1;
+}
+
+/* للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .addToCartBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+    min-width: 120px;
+  }
+}
+
+/* تأثير التحميل (اختياري) */
+.addToCartBtn.loading {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.addToCartBtn.loading::after {
+  content: '⏳';
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .emptyState {
   text-align: center;

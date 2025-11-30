@@ -59,7 +59,7 @@ export default async function handler(req, res) {
         requiresVerification: true,
       });
     }
-
+  // userId: user.id, 
     // Generate JWT token
     const token = generateToken({
       id: user.id,

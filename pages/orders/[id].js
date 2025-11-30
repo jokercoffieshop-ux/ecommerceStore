@@ -162,7 +162,7 @@ export default function OrderDetails() {
             <div className={styles.orderTotal}>
               <span>الإجمالي:</span>
               <span className={styles.totalAmount}>
-                {order.totalAmount.toFixed(2)} ج.م
+                {Number(order.totalAmount).toFixed(2)} ج.م
               </span>
             </div>
           </div>

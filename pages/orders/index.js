@@ -146,7 +146,7 @@ export default function Orders() {
                   <div className={styles.orderTotal}>
                     <span>الإجمالي:</span>
                     <span className={styles.totalAmount}>
-                      {order.totalAmount.toFixed(2)} ج.م
+                      {Number(order.totalAmount).toFixed(2)} ج.م
                     </span>
                   </div>
                   <Link href={`/orders/${order.id}`} className={styles.viewBtn}>

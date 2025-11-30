@@ -1,0 +1,3 @@
+{
+  "/api/auth/verify-otp": "pages/api/auth/verify-otp.js"
+}

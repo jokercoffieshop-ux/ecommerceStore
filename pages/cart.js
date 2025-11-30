@@ -168,7 +168,7 @@ export default function Cart() {
                   </div>
 
                   <div className={styles.itemTotal}>
-                    <p>{(item.product.price * item.quantity).toFixed(2)} ريال</p>
+                    <p>{(item.product.price * item.quantity).toFixed(2)} جنيه</p>
                   </div>
 
                   <button

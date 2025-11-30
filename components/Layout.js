@@ -81,6 +81,9 @@ export default function Layout({ children }) {
                     <Link href="/admin/orders" onClick={closeMobileMenu}>
                       📋 الطلبات
                     </Link>
+                    <Link href="/admin/users" onClick={closeMobileMenu}>
+                      المستخدمين
+                    </Link>
                   </>
                 )}
 

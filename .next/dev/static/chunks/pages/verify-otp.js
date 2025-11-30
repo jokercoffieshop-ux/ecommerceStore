@@ -1,0 +1,12 @@
+__turbopack_load_page_chunks__("/verify-otp", [
+  "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
+  "static/chunks/f5964_next_dist_shared_lib_5a9b700b._.js",
+  "static/chunks/f5964_next_dist_client_253310ec._.js",
+  "static/chunks/f5964_next_dist_2e793457._.js",
+  "static/chunks/f5964_next_router_df011190.js",
+  "static/chunks/f5964_react-dom_25b217df._.js",
+  "static/chunks/f5964_3dcb3eb8._.js",
+  "static/chunks/[root-of-the-server]__4b12da59._.js",
+  "static/chunks/Downloads_coffe-project_pages_verify-otp_2da965e7._.js",
+  "static/chunks/turbopack-Downloads_coffe-project_pages_verify-otp_c361995e._.js"
+])
