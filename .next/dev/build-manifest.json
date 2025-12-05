@@ -26,44 +26,18 @@
       "static/chunks/Downloads_coffe-project_pages__app_2da965e7._.js",
       "static/chunks/turbopack-Downloads_coffe-project_pages__app_dcfbf71f._.js"
     ],
-    "/about": [
-      "static/chunks/[root-of-the-server]__33a28b06._.js",
+    "/_error": [
       "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
+      "static/chunks/f5964_next_dist_shared_lib_eaeb340e._.js",
+      "static/chunks/f5964_next_dist_client_253310ec._.js",
+      "static/chunks/f5964_next_dist_3bc9a035._.js",
+      "static/chunks/f5964_next_error_9b61c402.js",
+      "static/chunks/[next]_entry_page-loader_ts_b78f5506._.js",
       "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/Downloads_coffe-project_styles_2743f233._.css",
-      "static/chunks/Downloads_coffe-project_pages_about_2da965e7._.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_about_b24c41e3._.js"
-    ],
-    "/admin/categories": [
-      "static/chunks/[root-of-the-server]__b7fbcdf8._.js",
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/Downloads_coffe-project_styles_ca479c6c._.css",
-      "static/chunks/Downloads_coffe-project_pages_admin_categories_2da965e7.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_admin_categories_a2002e23.js"
-    ],
-    "/admin/orders": [
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/[root-of-the-server]__265368f2._.js",
-      "static/chunks/Downloads_coffe-project_styles_ca479c6c._.css",
-      "static/chunks/Downloads_coffe-project_pages_admin_orders_2da965e7.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_admin_orders_ceb660dd.js"
+      "static/chunks/f5964_068ccb94._.js",
+      "static/chunks/[root-of-the-server]__d43397d8._.js",
+      "static/chunks/Downloads_coffe-project_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_coffe-project_pages__error_af00b4e9._.js"
     ],
     "/admin/products": [
       "static/chunks/[root-of-the-server]__adc9b490._.js",
@@ -77,71 +51,6 @@
       "static/chunks/Downloads_coffe-project_styles_ca479c6c._.css",
       "static/chunks/Downloads_coffe-project_pages_admin_products_2da965e7.js",
       "static/chunks/turbopack-Downloads_coffe-project_pages_admin_products_2cf73ed6.js"
-    ],
-    "/admin/users": [
-      "static/chunks/[root-of-the-server]__fa2ac4db._.js",
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/Downloads_coffe-project_styles_ca479c6c._.css",
-      "static/chunks/Downloads_coffe-project_pages_admin_users_2da965e7.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_admin_users_332e7499.js"
-    ],
-    "/cart": [
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/[root-of-the-server]__7cd7d5e0._.js",
-      "static/chunks/Downloads_coffe-project_styles_c1262d33._.css",
-      "static/chunks/Downloads_coffe-project_pages_cart_2da965e7._.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_cart_bc5715e4._.js"
-    ],
-    "/login": [
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/[root-of-the-server]__607960d4._.js",
-      "static/chunks/Downloads_coffe-project_styles_968cb622._.css",
-      "static/chunks/Downloads_coffe-project_pages_login_2da965e7._.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_login_c4cfd849._.js"
-    ],
-    "/orders": [
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/[root-of-the-server]__4a431b1f._.js",
-      "static/chunks/Downloads_coffe-project_styles_821fdf48._.css",
-      "static/chunks/Downloads_coffe-project_pages_orders_index_2da965e7.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_orders_index_231a560e.js"
-    ],
-    "/products": [
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_f2a366bb._.js",
-      "static/chunks/f5964_next_dist_client_bdd29016._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_8cae3839._.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/[root-of-the-server]__d9c871ba._.js",
-      "static/chunks/Downloads_coffe-project_styles_7ad72840._.css",
-      "static/chunks/Downloads_coffe-project_pages_products_2da965e7._.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_products_28b7fc1e._.js"
     ],
     "/profile": [
       "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
@@ -168,18 +77,6 @@
       "static/chunks/Downloads_coffe-project_styles_968cb622._.css",
       "static/chunks/Downloads_coffe-project_pages_register_2da965e7._.js",
       "static/chunks/turbopack-Downloads_coffe-project_pages_register_6e500a1f._.js"
-    ],
-    "/verify-otp": [
-      "static/chunks/f5964_next_dist_compiled_8ecf4677._.js",
-      "static/chunks/f5964_next_dist_shared_lib_5a9b700b._.js",
-      "static/chunks/f5964_next_dist_client_253310ec._.js",
-      "static/chunks/f5964_next_dist_2e793457._.js",
-      "static/chunks/f5964_next_router_df011190.js",
-      "static/chunks/f5964_react-dom_25b217df._.js",
-      "static/chunks/f5964_3dcb3eb8._.js",
-      "static/chunks/[root-of-the-server]__4b12da59._.js",
-      "static/chunks/Downloads_coffe-project_pages_verify-otp_2da965e7._.js",
-      "static/chunks/turbopack-Downloads_coffe-project_pages_verify-otp_c361995e._.js"
     ]
   },
   "devFiles": [],

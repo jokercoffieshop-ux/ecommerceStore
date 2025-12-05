@@ -1,0 +1,3 @@
+{
+  "/api/auth/send-otp": "pages/api/auth/send-otp.js"
+}

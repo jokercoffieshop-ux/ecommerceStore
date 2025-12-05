@@ -5,7 +5,7 @@
 
 import prisma from "../../../lib/prisma";
 import { authenticateUser, hasRole } from "../../../lib/jwt";
-import { parseForm, getFileUrl } from "../../../lib/upload";
+import { parseForm, getCloudinaryUrl, deleteFromCloudinary } from "../../../lib/upload";
 
 export const config = {
   api: {
@@ -115,6 +115,8 @@ async function handleGet(req, res) {
  * Admin/Staff only
  */
 async function handlePost(req, res) {
+  let uploadedPublicId = null;
+
   try {
     // التحقق من المصادقة والصلاحيات
     const authResult = await authenticateUser(req);
@@ -129,8 +131,12 @@ async function handlePost(req, res) {
       });
     }
 
-    // تحليل البيانات
-    const { fields, files } = await parseForm(req);
+    // تحليل البيانات والرفع إلى Cloudinary
+    const { fields, files, cloudinaryResults } = await parseForm(req, {
+      folder: "products",
+      maxFileSize: 5 * 1024 * 1024, // 5MB
+      allowedFormats: ["jpg", "jpeg", "png", "gif", "webp"],
+    });
 
     const {
       nameAr,
@@ -148,6 +154,11 @@ async function handlePost(req, res) {
 
     // التحقق من البيانات المطلوبة
     if (!nameAr || !price || !categoryId) {
+      // حذف الصورة المرفوعة إذا كانت موجودة
+      if (cloudinaryResults.image?.public_id) {
+        await deleteFromCloudinary(cloudinaryResults.image.public_id);
+      }
+
       return res.status(400).json({
         success: false,
         message: "الاسم بالعربية والسعر والفئة مطلوبة",
@@ -160,16 +171,26 @@ async function handlePost(req, res) {
     });
 
     if (!category) {
+      // حذف الصورة المرفوعة إذا كانت موجودة
+      if (cloudinaryResults.image?.public_id) {
+        await deleteFromCloudinary(cloudinaryResults.image.public_id);
+      }
+
       return res.status(400).json({
         success: false,
         message: "الفئة غير موجودة",
       });
     }
 
-    // معالجة الصورة
+    // معالجة الصورة من Cloudinary
     let imageUrl = null;
-    if (files.image) {
-      imageUrl = getFileUrl(files.image);
+    let imagePublicId = null;
+
+    if (cloudinaryResults.image) {
+      uploadedPublicId = cloudinaryResults.image.public_id;
+      imageUrl = cloudinaryResults.image.secure_url || 
+                 getCloudinaryUrl(cloudinaryResults.image);
+      imagePublicId = uploadedPublicId;
     }
 
     // إنشاء المنتج
@@ -187,6 +208,7 @@ async function handlePost(req, res) {
         weight: weight || null,
         sku: sku || null,
         imageUrl,
+        imagePublicId,
       },
       include: {
         category: true,
@@ -200,6 +222,15 @@ async function handlePost(req, res) {
     });
   } catch (error) {
     console.error("Error creating product:", error);
+
+    // حذف الصورة المرفوعة في حالة حدوث خطأ
+    if (uploadedPublicId) {
+      try {
+        await deleteFromCloudinary(uploadedPublicId);
+      } catch (cleanupError) {
+        console.error("Error cleaning up uploaded image:", cleanupError);
+      }
+    }
     
     // التحقق من خطأ SKU المكرر
     if (error.code === "P2002" && error.meta?.target?.includes("sku")) {
@@ -216,4 +247,3 @@ async function handlePost(req, res) {
     });
   }
 }
-

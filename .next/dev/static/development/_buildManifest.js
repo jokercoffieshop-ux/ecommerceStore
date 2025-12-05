@@ -2,41 +2,17 @@ self.__BUILD_MANIFEST = {
   "/": [
     "static/chunks/pages/index.js"
   ],
-  "/about": [
-    "static/chunks/pages/about.js"
-  ],
-  "/admin/categories": [
-    "static/chunks/pages/admin/categories.js"
-  ],
-  "/admin/orders": [
-    "static/chunks/pages/admin/orders.js"
+  "/_error": [
+    "static/chunks/pages/_error.js"
   ],
   "/admin/products": [
     "static/chunks/pages/admin/products.js"
-  ],
-  "/admin/users": [
-    "static/chunks/pages/admin/users.js"
-  ],
-  "/cart": [
-    "static/chunks/pages/cart.js"
-  ],
-  "/login": [
-    "static/chunks/pages/login.js"
-  ],
-  "/orders": [
-    "static/chunks/pages/orders.js"
-  ],
-  "/products": [
-    "static/chunks/pages/products.js"
   ],
   "/profile": [
     "static/chunks/pages/profile.js"
   ],
   "/register": [
     "static/chunks/pages/register.js"
-  ],
-  "/verify-otp": [
-    "static/chunks/pages/verify-otp.js"
   ],
   "__rewrites": {
     "afterFiles": [],
@@ -75,6 +51,7 @@ self.__BUILD_MANIFEST = {
     "/api/user/profile",
     "/cart",
     "/checkout",
+    "/contact",
     "/forgot-password",
     "/login",
     "/orders",

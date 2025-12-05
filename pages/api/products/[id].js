@@ -6,7 +6,7 @@
 
 import prisma from "../../../lib/prisma";
 import { authenticateUser, hasRole } from "../../../lib/jwt";
-import { parseForm, getFileUrl, deleteFile } from "../../../lib/upload";
+import { parseForm, getCloudinaryUrl, deleteFromCloudinary } from "../../../lib/upload";
 
 export const config = {
   api: {
@@ -72,6 +72,8 @@ async function handleGet(req, res, id) {
  * Admin/Staff only
  */
 async function handlePut(req, res, id) {
+  let newImagePublicId = null;
+
   try {
     // التحقق من المصادقة والصلاحيات
     const authResult = await authenticateUser(req);
@@ -98,8 +100,13 @@ async function handlePut(req, res, id) {
       });
     }
 
-    // تحليل البيانات
-    const { fields, files } = await parseForm(req);
+    // تحليل البيانات والرفع إلى Cloudinary
+    const { fields, files, cloudinaryResults } = await parseForm(req, {
+      folder: "products",
+      maxFileSize: 5 * 1024 * 1024, // 5MB
+      allowedFormats: ["jpg", "jpeg", "png", "gif", "webp"],
+    });
+
     const {
       nameAr,
       nameEn,
@@ -121,6 +128,11 @@ async function handlePut(req, res, id) {
       });
 
       if (!category) {
+        // حذف الصورة المرفوعة إذا كانت موجودة
+        if (cloudinaryResults.image?.public_id) {
+          await deleteFromCloudinary(cloudinaryResults.image.public_id);
+        }
+
         return res.status(400).json({
           success: false,
           message: "الفئة غير موجودة",
@@ -128,14 +140,25 @@ async function handlePut(req, res, id) {
       }
     }
 
-    // معالجة الصورة الجديدة
+    // معالجة الصورة الجديدة من Cloudinary
     let imageUrl = existingProduct.imageUrl;
-    if (files.image) {
-      // حذف الصورة القديمة
-      if (existingProduct.imageUrl) {
-        deleteFile(existingProduct.imageUrl);
+    let imagePublicId = existingProduct.imagePublicId;
+
+    if (cloudinaryResults.image) {
+      // حفظ معرف الصورة الجديدة
+      newImagePublicId = cloudinaryResults.image.public_id;
+      imageUrl = cloudinaryResults.image.secure_url || getCloudinaryUrl(cloudinaryResults.image);
+      imagePublicId = newImagePublicId;
+
+      // حذف الصورة القديمة من Cloudinary
+      if (existingProduct.imagePublicId) {
+        try {
+          await deleteFromCloudinary(existingProduct.imagePublicId);
+        } catch (deleteError) {
+          console.error("Error deleting old image:", deleteError);
+          // نكمل العملية حتى لو فشل حذف الصورة القديمة
+        }
       }
-      imageUrl = getFileUrl(files.image);
     }
 
     // تحديث المنتج
@@ -154,6 +177,7 @@ async function handlePut(req, res, id) {
         weight: weight !== undefined ? weight : existingProduct.weight,
         sku: sku !== undefined ? sku : existingProduct.sku,
         imageUrl,
+        imagePublicId,
       },
       include: {
         category: true,
@@ -167,6 +191,15 @@ async function handlePut(req, res, id) {
     });
   } catch (error) {
     console.error("Error updating product:", error);
+
+    // حذف الصورة الجديدة المرفوعة في حالة حدوث خطأ
+    if (newImagePublicId) {
+      try {
+        await deleteFromCloudinary(newImagePublicId);
+      } catch (cleanupError) {
+        console.error("Error cleaning up uploaded image:", cleanupError);
+      }
+    }
 
     // التحقق من خطأ SKU المكرر
     if (error.code === "P2002" && error.meta?.target?.includes("sku")) {
@@ -214,9 +247,14 @@ async function handleDelete(req, res, id) {
       });
     }
 
-    // حذف الصورة
-    if (product.imageUrl) {
-      deleteFile(product.imageUrl);
+    // حذف الصورة من Cloudinary
+    if (product.imagePublicId) {
+      try {
+        await deleteFromCloudinary(product.imagePublicId);
+      } catch (deleteError) {
+        console.error("Error deleting image from Cloudinary:", deleteError);
+        // نكمل عملية حذف المنتج حتى لو فشل حذف الصورة
+      }
     }
 
     // حذف المنتج
@@ -236,4 +274,3 @@ async function handleDelete(req, res, id) {
     });
   }
 }
-

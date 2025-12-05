@@ -1,10 +1,7 @@
-[00:00:01.072] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.232] Server  LOG      ✓ Ready in 850ms
-[00:00:07.808] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:01:04.479] Server  LOG     Raw fields from formidable: {}
-[00:01:04.481] Server  LOG     Raw files from formidable: {}
-[00:01:04.481] Server  LOG     Normalized fields: {}
-[00:01:04.482] Server  LOG     Normalized files: {}
-[00:01:04.483] Server  LOG     Parsed fields: {}
-[00:01:04.484] Server  LOG     Parsed files: {}
-[00:01:09.067] Server  LOG     OTP email sent to ya1770620@gmail.com
+[00:00:01.488] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:02.086] Server  LOG      ✓ Ready in 1675ms
+[00:00:42.965] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:17.594] Server  ERROR    ⨯ Error: aborted
+[00:03:01.818] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:03:58.763] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:04:12.062] Server  LOG     Deleted from Cloudinary: products/mqaiufkjkt44q1shqtwo {}

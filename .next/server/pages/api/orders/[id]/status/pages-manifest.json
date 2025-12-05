@@ -1,0 +1,3 @@
+{
+  "/api/orders/[id]/status": "pages/api/orders/[id]/status.js"
+}

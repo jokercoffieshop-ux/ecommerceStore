@@ -6,7 +6,7 @@
 
 import prisma from "../../../lib/prisma";
 import { authenticateUser, hasRole } from "../../../lib/jwt";
-import { parseForm, getFileUrl, deleteFile } from "../../../lib/upload";
+import { parseForm, getCloudinaryUrl, deleteFromCloudinary, extractPublicId } from "../../../lib/upload";
 
 export const config = {
   api: {
@@ -71,6 +71,8 @@ async function handleGet(req, res, id) {
  * Admin only
  */
 async function handlePut(req, res, id) {
+  let newImagePublicId = null;
+
   try {
     // التحقق من المصادقة والصلاحيات
     const authResult = await authenticateUser(req);
@@ -97,18 +99,34 @@ async function handlePut(req, res, id) {
       });
     }
 
-    // تحليل البيانات
-    const { fields, files } = await parseForm(req);
+    // تحليل البيانات والرفع إلى Cloudinary
+    const { fields, files, cloudinaryResults } = await parseForm(req, {
+      folder: "categories",
+      maxFileSize: 5 * 1024 * 1024, // 5MB
+      allowedFormats: ["jpg", "jpeg", "png", "gif", "webp"],
+    });
+
     const { nameAr, nameEn, descriptionAr, descriptionEn, isActive, order } = fields;
 
     // معالجة الصورة الجديدة
     let imageUrl = existingCategory.imageUrl;
-    if (files.image) {
-      // حذف الصورة القديمة
-      if (existingCategory.imageUrl) {
-        deleteFile(existingCategory.imageUrl);
+    let imagePublicId = existingCategory.imagePublicId;
+
+    if (cloudinaryResults.image) {
+      // حفظ معرف الصورة الجديدة
+      newImagePublicId = cloudinaryResults.image.public_id;
+      imageUrl = cloudinaryResults.image.secure_url || getCloudinaryUrl(cloudinaryResults.image);
+      imagePublicId = newImagePublicId;
+
+      // حذف الصورة القديمة من Cloudinary
+      if (existingCategory.imagePublicId) {
+        try {
+          await deleteFromCloudinary(existingCategory.imagePublicId);
+        } catch (deleteError) {
+          console.error("Error deleting old image:", deleteError);
+          // نكمل العملية حتى لو فشل حذف الصورة القديمة
+        }
       }
-      imageUrl = getFileUrl(files.image);
     }
 
     // تحديث الفئة
@@ -120,6 +138,7 @@ async function handlePut(req, res, id) {
         descriptionAr: descriptionAr !== undefined ? descriptionAr : existingCategory.descriptionAr,
         descriptionEn: descriptionEn !== undefined ? descriptionEn : existingCategory.descriptionEn,
         imageUrl,
+        imagePublicId,
         isActive: isActive !== undefined ? (isActive === "true" || isActive === true) : existingCategory.isActive,
         order: order !== undefined ? parseInt(order) : existingCategory.order,
       },
@@ -132,6 +151,16 @@ async function handlePut(req, res, id) {
     });
   } catch (error) {
     console.error("Error updating category:", error);
+
+    // حذف الصورة الجديدة المرفوعة في حالة حدوث خطأ
+    if (newImagePublicId) {
+      try {
+        await deleteFromCloudinary(newImagePublicId);
+      } catch (cleanupError) {
+        console.error("Error cleaning up uploaded image:", cleanupError);
+      }
+    }
+
     return res.status(500).json({
       success: false,
       message: "حدث خطأ أثناء تعديل الفئة",
@@ -183,9 +212,14 @@ async function handleDelete(req, res, id) {
       });
     }
 
-    // حذف الصورة
-    if (category.imageUrl) {
-      deleteFile(category.imageUrl);
+    // حذف الصورة من Cloudinary
+    if (category.imagePublicId) {
+      try {
+        await deleteFromCloudinary(category.imagePublicId);
+      } catch (deleteError) {
+        console.error("Error deleting image from Cloudinary:", deleteError);
+        // نكمل عملية حذف الفئة حتى لو فشل حذف الصورة
+      }
     }
 
     // حذف الفئة
@@ -205,4 +239,3 @@ async function handleDelete(req, res, id) {
     });
   }
 }
-

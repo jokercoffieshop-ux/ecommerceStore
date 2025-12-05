@@ -5,7 +5,7 @@
 
 import prisma from "../../../lib/prisma";
 import { authenticateUser, hasRole } from "../../../lib/jwt";
-import { parseForm, getFileUrl } from "../../../lib/upload";
+import { parseForm, getCloudinaryUrl, deleteFromCloudinary } from "../../../lib/upload";
 
 export const config = {
   api: {
@@ -68,6 +68,8 @@ async function handleGet(req, res) {
  * Admin only
  */
 async function handlePost(req, res) {
+  let uploadedPublicId = null;
+
   try {
     // التحقق من المصادقة والصلاحيات
     const authResult = await authenticateUser(req);
@@ -82,23 +84,37 @@ async function handlePost(req, res) {
       });
     }
 
-    // تحليل البيانات
-    const { fields, files } = await parseForm(req);
+    // تحليل البيانات والرفع إلى Cloudinary
+    const { fields, files, cloudinaryResults } = await parseForm(req, {
+      folder: "categories",
+      maxFileSize: 5 * 1024 * 1024, // 5MB
+      allowedFormats: ["jpg", "jpeg", "png", "gif", "webp"],
+    });
 
     const { nameAr, nameEn, descriptionAr, descriptionEn, isActive, order } = fields;
 
     // التحقق من البيانات المطلوبة
     if (!nameAr) {
+      // حذف الصورة المرفوعة إذا كانت موجودة
+      if (cloudinaryResults.image?.public_id) {
+        await deleteFromCloudinary(cloudinaryResults.image.public_id);
+      }
+
       return res.status(400).json({
         success: false,
         message: "الاسم بالعربية مطلوب",
       });
     }
 
-    // معالجة الصورة
+    // معالجة الصورة من Cloudinary
     let imageUrl = null;
-    if (files.image) {
-      imageUrl = getFileUrl(files.image);
+    let imagePublicId = null;
+
+    if (cloudinaryResults.image) {
+      uploadedPublicId = cloudinaryResults.image.public_id;
+      imageUrl = cloudinaryResults.image.secure_url || 
+                 getCloudinaryUrl(cloudinaryResults.image);
+      imagePublicId = uploadedPublicId;
     }
 
     // إنشاء الفئة
@@ -109,6 +125,7 @@ async function handlePost(req, res) {
         descriptionAr: descriptionAr || null,
         descriptionEn: descriptionEn || null,
         imageUrl,
+        imagePublicId,
         isActive: isActive === "true" || isActive === true,
         order: order ? parseInt(order) : 0,
       },
@@ -121,6 +138,16 @@ async function handlePost(req, res) {
     });
   } catch (error) {
     console.error("Error creating category:", error);
+
+    // حذف الصورة المرفوعة في حالة حدوث خطأ
+    if (uploadedPublicId) {
+      try {
+        await deleteFromCloudinary(uploadedPublicId);
+      } catch (cleanupError) {
+        console.error("Error cleaning up uploaded image:", cleanupError);
+      }
+    }
+
     return res.status(500).json({
       success: false,
       message: "حدث خطأ أثناء إضافة الفئة",
@@ -128,4 +155,3 @@ async function handlePost(req, res) {
     });
   }
 }
-

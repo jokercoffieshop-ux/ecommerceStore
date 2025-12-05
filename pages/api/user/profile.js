@@ -5,8 +5,8 @@
 
 import prisma from "../../../lib/prisma";
 import { authenticateUser } from "../../../lib/jwt";
-import { parseForm, getFileUrl, deleteFile } from "../../../lib/upload";
-import { validate, updateProfileSchema, validateImageFile } from "../../../lib/validation";
+import { parseForm, getCloudinaryUrl, deleteFromCloudinary } from "../../../lib/upload";
+import { validate, updateProfileSchema } from "../../../lib/validation";
 
 export default async function handler(req, res) {
   // Authenticate user
@@ -59,17 +59,23 @@ export default async function handler(req, res) {
 
   // PUT - Update user profile
   if (req.method === "PUT") {
+    let uploadedPublicId = null;
+
     try {
       // Check if request contains file upload
       const contentType = req.headers["content-type"] || "";
       let fields = {};
-      let files = {};
+      let cloudinaryResults = {};
 
       if (contentType.includes("multipart/form-data")) {
-        // Parse form data with file upload
-        const parsed = await parseForm(req);
+        // Parse form data with file upload to Cloudinary
+        const parsed = await parseForm(req, {
+          folder: "user-avatars",
+          maxFileSize: 5 * 1024 * 1024, // 5MB
+          allowedFormats: ["jpg", "jpeg", "png", "gif", "webp"],
+        });
         fields = parsed.fields;
-        files = parsed.files;
+        cloudinaryResults = parsed.cloudinaryResults;
       } else {
         // Regular JSON body
         fields = req.body;
@@ -82,6 +88,11 @@ export default async function handler(req, res) {
       });
 
       if (!validation.success) {
+        // Clean up uploaded file if validation fails
+        if (cloudinaryResults.avatar?.public_id) {
+          await deleteFromCloudinary(cloudinaryResults.avatar.public_id);
+        }
+
         return res.status(400).json({
           success: false,
           message: "Validation failed",
@@ -100,29 +111,28 @@ export default async function handler(req, res) {
         updateData.phone = validation.data.phone || null;
       }
 
-      // Handle avatar upload
-      if (files.avatar) {
-        const fileValidation = validateImageFile(files.avatar);
-        if (!fileValidation.valid) {
-          return res.status(400).json({
-            success: false,
-            message: fileValidation.error,
-          });
-        }
-
+      // Handle avatar upload from Cloudinary
+      if (cloudinaryResults.avatar) {
         // Get current user to delete old avatar
         const currentUser = await prisma.user.findUnique({
           where: { id: user.id },
-          select: { avatarUrl: true },
+          select: { avatarUrl: true, avatarPublicId: true },
         });
 
-        // Delete old avatar if exists
-        if (currentUser.avatarUrl) {
-          deleteFile(currentUser.avatarUrl);
-        }
+        uploadedPublicId = cloudinaryResults.avatar.public_id;
+        updateData.avatarUrl = cloudinaryResults.avatar.secure_url || 
+                               getCloudinaryUrl(cloudinaryResults.avatar);
+        updateData.avatarPublicId = uploadedPublicId;
 
-        // Set new avatar URL
-        updateData.avatarUrl = getFileUrl(files.avatar);
+        // Delete old avatar from Cloudinary if exists
+        if (currentUser.avatarPublicId) {
+          try {
+            await deleteFromCloudinary(currentUser.avatarPublicId);
+          } catch (deleteError) {
+            console.error("Error deleting old avatar:", deleteError);
+            // Continue with update even if old avatar deletion fails
+          }
+        }
       }
 
       // Update user profile
@@ -149,6 +159,16 @@ export default async function handler(req, res) {
       });
     } catch (error) {
       console.error("Update profile error:", error);
+
+      // Clean up uploaded file on error
+      if (uploadedPublicId) {
+        try {
+          await deleteFromCloudinary(uploadedPublicId);
+        } catch (cleanupError) {
+          console.error("Error cleaning up uploaded avatar:", cleanupError);
+        }
+      }
+
       return res.status(500).json({
         success: false,
         message: "Internal server error",
@@ -170,4 +190,3 @@ export const config = {
     bodyParser: false,
   },
 };
-

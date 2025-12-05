@@ -5,8 +5,8 @@
 
 import prisma from "../../../lib/prisma";
 import bcrypt from "bcrypt";
-import { parseForm, getFileUrl } from "../../../lib/upload";
-import { validate, registerSchema, validateImageFile } from "../../../lib/validation";
+import { parseForm, getCloudinaryUrl, deleteFromCloudinary } from "../../../lib/upload";
+import { validate, registerSchema } from "../../../lib/validation";
 import { generateOtpCode, getOtpExpiration, sendOtpEmail } from "../../../lib/email";
 
 // Disable default body parser for file uploads
@@ -22,12 +22,18 @@ export default async function handler(req, res) {
     return res.status(405).json({ success: false, message: "Method not allowed" });
   }
 
+  let uploadedPublicId = null;
+
   try {
-    // Parse form data (including file upload)
-    const { fields, files } = await parseForm(req);
+    // Parse form data (including file upload to Cloudinary)
+    const { fields, files, cloudinaryResults } = await parseForm(req, {
+      folder: "user-avatars",
+      maxFileSize: 5 * 1024 * 1024, // 5MB
+      allowedFormats: ["jpg", "jpeg", "png", "gif", "webp"],
+    });
 
     console.log("Parsed fields:", fields);
-    console.log("Parsed files:", files);
+    console.log("Cloudinary results:", cloudinaryResults);
 
     // Validate input data
     const validation = validate(registerSchema, {
@@ -38,6 +44,11 @@ export default async function handler(req, res) {
     });
 
     if (!validation.success) {
+      // Clean up uploaded file if validation fails
+      if (cloudinaryResults.avatar?.public_id) {
+        await deleteFromCloudinary(cloudinaryResults.avatar.public_id);
+      }
+
       return res.status(400).json({
         success: false,
         message: "Validation failed",
@@ -53,23 +64,23 @@ export default async function handler(req, res) {
     });
 
     if (existingUser) {
+      // Clean up uploaded file if user exists
+      if (cloudinaryResults.avatar?.public_id) {
+        await deleteFromCloudinary(cloudinaryResults.avatar.public_id);
+      }
+
       return res.status(400).json({
         success: false,
         message: "User with this email already exists",
       });
     }
 
-    // Validate avatar file if provided
+    // Get avatar URL from Cloudinary if uploaded
     let avatarUrl = null;
-    if (files.avatar) {
-      const fileValidation = validateImageFile(files.avatar);
-      if (!fileValidation.valid) {
-        return res.status(400).json({
-          success: false,
-          message: fileValidation.error,
-        });
-      }
-      avatarUrl = getFileUrl(files.avatar);
+    if (cloudinaryResults.avatar) {
+      uploadedPublicId = cloudinaryResults.avatar.public_id;
+      avatarUrl = cloudinaryResults.avatar.secure_url || 
+                  getCloudinaryUrl(cloudinaryResults.avatar);
     }
 
     // Hash password
@@ -83,6 +94,7 @@ export default async function handler(req, res) {
         password: hashedPassword,
         phone: phone || null,
         avatarUrl,
+        avatarPublicId: uploadedPublicId, // Store for future deletion
         role: "CLIENT", // Default role
         isVerified: false,
       },
@@ -113,6 +125,16 @@ export default async function handler(req, res) {
     });
   } catch (error) {
     console.error("Registration error:", error);
+
+    // Clean up uploaded file on error
+    if (uploadedPublicId) {
+      try {
+        await deleteFromCloudinary(uploadedPublicId);
+      } catch (cleanupError) {
+        console.error("Error cleaning up uploaded file:", cleanupError);
+      }
+    }
+
     return res.status(500).json({
       success: false,
       message: "Internal server error",
@@ -120,4 +142,3 @@ export default async function handler(req, res) {
     });
   }
 }
-
